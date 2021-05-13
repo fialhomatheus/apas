@@ -234,6 +234,8 @@ void sf_touch_panel_i2c_init(void)
     }
 }
 TX_SEMAPHORE g_lcd_semaphore;
+TX_QUEUE g_lcd_distance_queue;
+static uint8_t queue_memory_g_lcd_distance_queue[4];
 extern bool g_ssp_common_initialized;
 extern uint32_t g_ssp_common_thread_count;
 extern TX_SEMAPHORE g_ssp_common_initialized_semaphore;
@@ -249,6 +251,14 @@ void lcd_thread_create(void)
     if (TX_SUCCESS != err_g_lcd_semaphore)
     {
         tx_startup_err_callback (&g_lcd_semaphore, 0);
+    }
+    UINT err_g_lcd_distance_queue;
+    err_g_lcd_distance_queue = tx_queue_create (&g_lcd_distance_queue, (CHAR *) "lcd_distance_queue", 1,
+                                                &queue_memory_g_lcd_distance_queue,
+                                                sizeof(queue_memory_g_lcd_distance_queue));
+    if (TX_SUCCESS != err_g_lcd_distance_queue)
+    {
+        tx_startup_err_callback (&g_lcd_distance_queue, 0);
     }
 
     UINT err;

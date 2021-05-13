@@ -581,6 +581,26 @@
         <property id="rtos.threadx.object.semaphore.symbol" value="g_lcd_semaphore"/>
         <property id="rtos.threadx.object.semaphore.count" value="0"/>
       </object>
+      <object id="rtos.threadx.object.queue.372560430">
+        <property id="rtos.threadx.object.queue.name" value="lcd_distance_queue"/>
+        <property id="rtos.threadx.object.queue.symbol" value="g_lcd_distance_queue"/>
+        <property id="rtos.threadx.object.queue.msg_size" value="1"/>
+        <property id="rtos.threadx.object.queue.queue_size" value="4"/>
+      </object>
+    </context>
+    <context id="rtos.threadx.thread.217670425">
+      <property id="_symbol" value="ultrassonic_sensor_thread"/>
+      <property id="rtos.threadx.thread.name" value="Ultrassonic Sensor Thread"/>
+      <property id="rtos.threadx.thread.stack" value="1024"/>
+      <property id="rtos.threadx.thread.priority" value="1"/>
+      <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
+      <property id="rtos.threadx.thread.timeslice" value="1"/>
+      <object id="rtos.threadx.object.queue.1246829959">
+        <property id="rtos.threadx.object.queue.name" value="ultrassonic_sensor_queue"/>
+        <property id="rtos.threadx.object.queue.symbol" value="g_ultrassonic_sensor_queue"/>
+        <property id="rtos.threadx.object.queue.msg_size" value="1"/>
+        <property id="rtos.threadx.object.queue.queue_size" value="4"/>
+      </object>
     </context>
     <config id="config.driver.jpeg_decode">
       <property id="config.driver.jpeg_decode.param_checking_enable" value="config.driver.jpeg_decode.param_checking_enable.bsp"/>

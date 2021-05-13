@@ -3,6 +3,7 @@
 #include "bsp_api.h"
 #include "gx_api.h"
 #include "hardware/lcd.h"
+#include "ultrassonic_sensor_thread.h"
 
 /* Include GUIX resource and specification files */
 #include "gui/guiapp_resources.h"
@@ -22,8 +23,10 @@ GX_WINDOW_ROOT *p_window_root;
 extern GX_CONST GX_STUDIO_WIDGET *guiapp_widget_table[];
 extern WINDOW1_CONTROL_BLOCK window1;
 
-static UINT    val;
+uint32_t valor;
 static GX_CHAR txt_buffer[4];
+
+UINT err;
 
 /* LCD Thread entry function */
 void lcd_thread_entry(void)
@@ -86,8 +89,14 @@ void lcd_thread_entry(void)
 
     while (1)
     {
+        err = tx_queue_receive(&g_lcd_distance_queue, &valor, TX_WAIT_FOREVER);
+        if(err != TX_SUCCESS)
+        {
+            while(1);
+        }
+
         /* Convert current counter value to string */
-        gx_utility_ltoa((LONG) val, txt_buffer, 4);
+        gx_utility_ltoa((LONG) valor, txt_buffer, 4);
 
         gx_prompt_text_set(&window1.window1_distance, (GX_CHAR *)txt_buffer);
 
@@ -96,11 +105,6 @@ void lcd_thread_entry(void)
 
         /* Force re-draw all "dirty" widgets */
         gx_system_canvas_refresh();
-
-        val++;
-
-        if (99 < val)
-            val = 0;
 
         tx_thread_sleep(10);
     }

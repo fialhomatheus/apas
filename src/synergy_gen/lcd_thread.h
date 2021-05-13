@@ -94,6 +94,7 @@ extern const sf_message_instance_t g_sf_message0;
 void g_sf_touch_panel_i2c_err_callback(void *p_instance, void *p_data);
 void sf_touch_panel_i2c_init(void);
 extern TX_SEMAPHORE g_lcd_semaphore;
+extern TX_QUEUE g_lcd_distance_queue;
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
