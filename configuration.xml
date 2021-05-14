@@ -696,7 +696,6 @@
       <stack module="module.driver.ioport_on_ioport.0"/>
       <stack module="module.driver.elc_on_elc.0"/>
       <stack module="module.driver.fmi_on_fmi.0"/>
-      <stack module="module.driver.ioport_on_ioport.0"/>
     </context>
     <context id="rtos.threadx.thread.1901053076">
       <property id="_symbol" value="lcd_thread"/>

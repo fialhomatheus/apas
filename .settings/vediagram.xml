@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<Elements>
+<DIAGRAM>
+	<VEModelDiagram.BackgroundGridLinesOption>false</VEModelDiagram.BackgroundGridLinesOption>
+	<VEModelDiagram.BackgroundImageOption></VEModelDiagram.BackgroundImageOption>
+	<VEModelDiagram.BackgroundImageStretchOption>false</VEModelDiagram.BackgroundImageStretchOption>
+</DIAGRAM>
+<GAUGE>
+	<VEModelChildElement.LocationX>23</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>28</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>135</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>backRightSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+<GAUGE>
+	<VEModelChildElement.LocationX>219</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>29</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>135</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>backLeftSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+<GAUGE>
+	<VEModelChildElement.LocationX>395</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>22</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>135</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>backMiddleSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+<GAUGE>
+	<VEModelChildElement.LocationX>22</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>216</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>135</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>frontRightSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+<GAUGE>
+	<VEModelChildElement.LocationX>205</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>208</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>135</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>frontLeftSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+<GAUGE>
+	<VEModelChildElement.LocationX>387</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>207</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>149</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>frontMiddleSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+<GAUGE>
+	<VEModelChildElement.LocationX>651</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>169</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>135</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>rightSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+<GAUGE>
+	<VEModelChildElement.LocationX>806</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>170</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>135</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>150</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>0.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>100.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>leftSensorDistance</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
+</GAUGE>
+</Elements>
