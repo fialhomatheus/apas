@@ -308,6 +308,12 @@ Synergy Configuration
   Module "SPI Driver on r_sci_spi"
     Parameter Checking: Default (BSP)
     
+  Module "Timer Driver on r_gpt"
+    Parameter Checking: Default (BSP)
+    
+  Module "Input Capture Driver on r_gpt_input_capture"
+    Parameter Checking: Default (BSP)
+    
   HAL
     Instance "g_cgc CGC Driver on r_cgc"
       Name [Fixed]: g_cgc
@@ -320,6 +326,9 @@ Synergy Configuration
       
     Instance "g_fmi FMI Driver on r_fmi"
       Name: g_fmi
+      
+    Instance "g_ioport I/O Port Driver on r_ioport"
+      Name [Fixed]: g_ioport
       
   Thread "LCD Thread"
     Symbol: lcd_thread
@@ -664,6 +673,151 @@ Synergy Configuration
     Auto start: Enabled
     Time slicing interval (ticks): 1
     
+    Instance "g_trigger Timer Driver on r_gpt"
+      Name: g_trigger
+      Channel: 11
+      Mode: PWM
+      Duty Cycle Range (only applicable in PWM mode): Shortest: 2 PCLK, Longest: (Period - 1) PCLK
+      Period Value: 110
+      Period Unit: Milliseconds
+      Duty Cycle Value: 9099
+      Duty Cycle Unit: Unit Percent X 1000
+      Auto Start: True
+      GTIOCA Output Enabled: True
+      GTIOCA Stop Level: Pin Level Low
+      GTIOCB Output Enabled: False
+      GTIOCB Stop Level: Pin Level Low
+      Callback: NULL
+      Overflow Interrupt Priority: Disabled
+      
+    Instance "g_sensor_back_right Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_back_right
+      Channel: 1
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
+    Instance "g_sensor_back_left Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_back_left
+      Channel: 3
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
+    Instance "g_sensor_back_middle Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_back_middle
+      Channel: 4
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
+    Instance "g_sensor_right Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_right
+      Channel: 5
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
+    Instance "g_sensor_front_right Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_front_right
+      Channel: 6
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
+    Instance "g_sensor_front_left Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_front_left
+      Channel: 7
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
+    Instance "g_sensor_front_middle Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_front_middle
+      Channel: 8
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
+    Instance "g_sensor_left Input Capture Driver on r_gpt_input_capture"
+      Name: g_sensor_left
+      Channel: 9
+      Mode: Pulse Width
+      Signal Edge: Rising
+      Repetition: Periodic
+      Auto Start: False
+      Callback: echo_measurement_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 12
+      Overflow Interrupt Priority: Priority 12
+      
     Object "g_ultrassonic_sensor_queue Queue"
       Name: ultrassonic_sensor_queue
       Symbol: g_ultrassonic_sensor_queue
