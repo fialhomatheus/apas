@@ -28,7 +28,7 @@ static uint32_t capture_counter = 0;
 int backRightSensorDistance, backLeftSensorDistance, backMiddleSensorDistance;
 int frontRightSensorDistance, frontLeftSensorDistance, frontMiddleSensorDistance;
 int rightSensorDistance, leftSensorDistance;
-int sumOfDistance = 0;
+
 uint32_t val;
 UINT err;
 

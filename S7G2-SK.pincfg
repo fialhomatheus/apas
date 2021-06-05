@@ -224,7 +224,7 @@
     <v1:connectionSetting altId="p109.debug0.tdo"/>
   </v1:configSetting>
   <v1:configSetting configurationId="p103.gpio_mode" altId="p103.gpio_mode.gpio_mode_peripheral"/>
-  <v1:configSetting configurationId="etherc1.rmii.txd_en" altId="etherc1.rmii.txd_en.none"></v1:configSetting>
+  <v1:configSetting configurationId="etherc1.rmii.txd_en" altId="etherc1.rmii.txd_en.none"/>
   <v1:configSetting configurationId="p901.gpio_mode" altId="p901.gpio_mode.gpio_mode_peripheral"/>
   <v1:configSetting configurationId="sci8.sck" altId="sci8.sck.p106">
     <v1:connectionSetting altId="p106.sci8.sck"/>
@@ -298,7 +298,7 @@
   <v1:configSetting configurationId="p310.gpio_mode" altId="p310.gpio_mode.gpio_mode_in"/>
   <v1:configSetting configurationId="p403.gpio_drivecapacity" altId="p403.gpio_speed.gpio_speed_medium"/>
   <v1:configSetting configurationId="p605.gpio_mode" altId="p605.gpio_mode.gpio_mode_in"/>
-  <v1:configSetting configurationId="etherc1.rmii.txd0" altId="etherc1.rmii.txd0.none"></v1:configSetting>
+  <v1:configSetting configurationId="etherc1.rmii.txd0" altId="etherc1.rmii.txd0.none"/>
   <v1:configSetting configurationId="etherc1.rmii.txd1" altId="etherc1.rmii.txd1.p406">
     <v1:connectionSetting altId="p406.etherc1.rmii.txd1"/>
   </v1:configSetting>
