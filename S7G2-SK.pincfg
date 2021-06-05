@@ -812,4 +812,12 @@
   </v1:configSetting>
   <v1:configSetting configurationId="gpt7.mode" altId="gpt7.mode.gtiocaorgtiocb.free"/>
   <v1:configSetting configurationId="gpt5.mode" altId="gpt5.mode.gtiocaorgtiocb.free"/>
+  <v1:configSetting configurationId="gpt10.gtioca" altId="gpt10.gtioca.p409">
+    <v1:connectionSetting altId="p409.gpt10.gtioca"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p409.gpio_mode" altId="p409.gpio_mode.gpio_mode_peripheral"/>
+  <v1:configSetting configurationId="p409" altId="p409.gpt10.gtioca">
+    <v1:connectionSetting altId="gpt10.gtioca.p409"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="gpt10.mode" altId="gpt10.mode.gtiocaorgtiocb.free"/>
 </v1:pinSettings>

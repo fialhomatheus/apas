@@ -109,4 +109,18 @@
 	<VEModelChildElement.foregroundColor>0</VEModelChildElement.foregroundColor>
 	<VEModelChildElement.backgroundColor>16777215</VEModelChildElement.backgroundColor>
 </GAUGE>
+<SLIDER>
+	<VEModelChildElement.LocationX>646</VEModelChildElement.LocationX>
+	<VEModelChildElement.LocationY>25</VEModelChildElement.LocationY>
+	<VEModelChildElement.SizeCX>407</VEModelChildElement.SizeCX>
+	<VEModelChildElement.SizeCY>100</VEModelChildElement.SizeCY>
+	<VEModelChildElement.expressionTitleVisible>true</VEModelChildElement.expressionTitleVisible>
+	<VEModelChildElement.minRange>90200.0</VEModelChildElement.minRange>
+	<VEModelChildElement.maxRange>94000.0</VEModelChildElement.maxRange>
+	<VEModelChildElement.expressionName>period</VEModelChildElement.expressionName>
+	<VEModelChildElement.expressionUpdatesDisabled>false</VEModelChildElement.expressionUpdatesDisabled>
+	<VEModelChildElement.foregroundColor>255</VEModelChildElement.foregroundColor>
+	<VEModelChildElement.backgroundColor>0</VEModelChildElement.backgroundColor>
+	<VEModelElementLabel.orientationHorzontal>true</VEModelElementLabel.orientationHorzontal>
+</SLIDER>
 </Elements>

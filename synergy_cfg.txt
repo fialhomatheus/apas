@@ -821,6 +821,31 @@ Synergy Configuration
       Message Size (Words): 1
       Queue Size (Bytes): 4
       
+  Thread "Servo Motor Thread"
+    Symbol: servo_motor_thread
+    Name: Servo Motor Thread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_servo_control Timer Driver on r_gpt"
+      Name: g_servo_control
+      Channel: 10
+      Mode: PWM
+      Duty Cycle Range (only applicable in PWM mode): Shortest: 2 PCLK, Longest: (Period - 1) PCLK
+      Period Value: 20
+      Period Unit: Milliseconds
+      Duty Cycle Value: 92500
+      Duty Cycle Unit: Unit Percent X 1000
+      Auto Start: True
+      GTIOCA Output Enabled: True
+      GTIOCA Stop Level: Pin Level High
+      GTIOCB Output Enabled: False
+      GTIOCB Stop Level: Pin Level Low
+      Callback: NULL
+      Overflow Interrupt Priority: Disabled
+      
   Messaging
     Subscriber "LCD Thread" 0 0
       Event Class "Touch"
